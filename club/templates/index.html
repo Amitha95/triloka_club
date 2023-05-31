@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>A World</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'index/css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'index/css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'index/images/fevicon.png' %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'index/css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="{% static 'index/css/owl.carousel.min.css' %}">
+      <link rel="stylesheet" href="{% static 'index/css/owl.theme.default.min.css' %}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <style>
+      .read_bt a {
+         width: 100%;
+         float: left;
+         font-size: 16px;
+         color: #141414;
+         background-color: #ffffff;
+         text-align: center;
+         padding: 10px 0px;
+         border-radius: 30px;
+         margin-top: 50px;
+         font-weight: 400;
+     }
+   </style>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="header_main">
+            <div class="mobile_menu">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="logo_mobile"><a href="index.html"><img src="{% static 'index/images/triloka1.jpeg' %}"></a></div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="contact.html">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div class="container-fluid">
+              <!-- <div class="logo"><a href="index.html"><img src="{% static 'index/images/logo.png' %}" style="color: crimson;"></a></div>-->
+               <div class="menu_main">
+                  <ul>
+                     <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'about' %}">About</a></li>
+                     <li><a href="{% url 'services' %}">Services</a></li>
+                     <li><a href="blog.html">Blog</a></li>
+                     <li><a href="{% url 'contact' %}">Contact us</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- banner section start -->
+         <div class="banner_section layout_padding">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <h1 class="banner_taital" style="color: crimson;">TRILOKA</h1>
+                        <p class="banner_text" >Arts and Sports Club</p>
+                        <div class="read_bt"><a href="#">Get Started</a></div>
+                     </div>
+                  </div>
+                 <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital" style="color: crimson;">ത്രിലോക</h1>
+                        <p class="banner_text">ആർട്‌സ് & സ്പോർട്സ് ക്ലബ്ബ്</p>
+                        <div class="read_bt"><a href="#">തുടരുക </a></div>
+                     </div>
+                  </div>
+                  <!--<div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital" style="color: crimson;">TRILOKA</h1>
+                        <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are ma available, but the majority have suffered</p>
+                        <div class="read_bt"><a href="#">Get A Quote</a></div>
+                     </div>
+                  </div>-->
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <h1 class="services_taital">Services </h1>
+            <p class="services_text">Triloka Arts and Sports Club offers a wide range of services and programs to cater to the diverse interests of its members.</p>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div><img src="{% static 'index/images/img-1.png' %}" class="services_img"></div>
+                     <div class="btn_main"><a href="#">Rafting</a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div><img src="{% static 'index/images/img-2.png' %}" class="services_img"></div>
+                     <div class="btn_main active"><a href="#">Hiking</a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div><img src="{% static 'index/images/img-3.png' %}" class="services_img"></div>
+                     <div class="btn_main"><a href="#">Camping</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <h1 class="about_taital">About Us</h1>
+                     <p class="about_text">Triloka Arts and Sports Club, Vellimon, is a vibrant and dynamic club that came into existence in 2021. With a strong focus on promoting both artistic and athletic pursuits, Triloka offers a diverse range of activities and opportunities for individuals of all ages and backgrounds. The club serves as a haven for artists, athletes, and enthusiasts alike, fostering creativity, physical fitness, and a sense of community. Through its extensive roster of programs, including visual arts, performing arts, and various sports disciplines, Triloka aims to inspire and nurture talent, while also providing a platform for members to showcase their skills and passion. Since its inception, Triloka has become a hub for cultural exchange, personal growth, and the celebration of artistic expression and sporting excellence. With its unwavering commitment to providing a holistic and inclusive experience, Triloka Arts and Sports Club continues to thrive as a beloved institution, uniting individuals through their shared love for arts and sports in the vibrant community of Vellimon. </p>
+                     <div class="readmore_bt"><a href="{% url 'about' %}">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6 padding_right_0">
+                  <div><img src="{% static 'index/images/triloka1.jpeg' %}" class="about_img"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- blog section start 
+      <div class="blog_section layout_padding">
+         <div class="container">
+            <h1 class="blog_taital">See Our  Video</h1>
+            <p class="blog_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+            <div class="play_icon_main">
+               <div class="play_icon"><a href="#"><img src="{% static 'index/images/play-icon.png' %}"></a></div>
+            </div>
+         </div>
+      </div>
+      <!-- blog section end -->
+      <!-- client section start -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <h1 class="client_taital">Our Members</h1>
+            <div class="client_section_2">
+               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="client_main">
+                           <div class="box_left">
+                              <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                           </div>
+                           <div class="box_right">
+                              <div class="client_taital_left">
+                                 <div class="client_img"><img src="{% static 'index/images/abhay.jpg' %}"></div>
+                                 <div class="quick_icon"><img src="{% static 'index/images/quick-icon.png' %}"></div>
+                              </div>
+                              <div class="client_taital_right">
+                                 <h4 class="client_name"> Abhay Krishnan U S</h4>
+                                 <p class="customer_text"> President</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="client_main">
+                           <div class="box_left">
+                              <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                           </div>
+                           <div class="box_right">
+                              <div class="client_taital_left">
+                                 <div class="client_img"><img src="{% static 'index/images/client-img.png' %}"></div>
+                                 <div class="quick_icon"><img src="{% static 'index/images/quick-icon.png' %}"></div>
+                              </div>
+                              <div class="client_taital_right">
+                                 <h4 class="client_name">Dame</h4>
+                                 <p class="customer_text">Customer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="client_main">
+                           <div class="box_left">
+                              <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                           </div>
+                           <div class="box_right">
+                              <div class="client_taital_left">
+                                 <div class="client_img"><img src="{% static 'index/images/client-img.png' %}"></div>
+                                 <div class="quick_icon"><img src="{% static 'index/images/quick-icon.png' %}"></div>
+                              </div>
+                              <div class="client_taital_right">
+                                 <h4 class="client_name">Dame</h4>
+                                 <p class="customer_text">Customer</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- client section start -->
+      <!-- choose section start 
+      <div class="choose_section layout_padding">
+         <div class="container">
+            <h1 class="choose_taital">Why Choose Us</h1>
+            <p class="choose_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All </p>
+            <div class="read_bt_1"><a href="#">Read More</a></div>
+            <div class="newsletter_box">
+               <h1 class="let_text">Let Start Talk with Us</h1>
+               <div class="getquote_bt"><a href="#">Get A Quote</a></div>
+            </div>
+         </div>
+      </div>
+      <!-- choose section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <!--<div class="input_btn_main">
+               <input type="text" class="mail_text" placeholder="Enter your email" name="Enter your email">
+               <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+            </div>-->
+            <div class="location_main">
+               <div class="call_text"><img src="{% static 'index/images/call-icon.png' %}"></div>
+               <div class="call_text"><a href="#">Call +01 1234567890</a></div>
+               <div class="call_text"><img src="{% static 'index/images/mail-icon.png' %}"></div>
+               <div class="call_text"><a href="#">demo@gmail.com</a></div>
+            </div>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="https://m.facebook.com/people/Triloka-Vellimon/100070142679902/"><img src="{% static 'index/images/fb-icon.png' %}"></a></li>
+                  <!--<li><a href="#"><img src="{% static 'index/images/twitter-icon.png' %}"></a></li>
+                  <li><a href="#"><img src="{% static 'index/images/linkedin-icon.png' %}"></a></li>-->
+                  <li><a href="https://www.instagram.com/trilokavellimon/"><img src="{% static 'index/images/instagram-icon.png' %}"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d126119.0918602605!2d76.5823895!3d8.9517153!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3b0609828349bbdd%3A0x70edc3e345ba498c!2sVellimon%2C%20Kerala%20691511!3m2!1d8.951721899999999!2d76.65243009999999!5e0!3m2!1sen!2sin!4v1685549108198!5m2!1sen!2sin" width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2021 All Rights Reserved. Design by <a href="https://html.design">Triloka Vellimon</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="{% static 'index/js/jquery.min.js' %}"></script>
+      <script src="{% static 'index/js/popper.min.js' %}"></script>
+      <script src="{% static 'index/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'index/js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'index/js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'index/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'index/js/custom.js' %}"></script>
+      <!-- javascript --> 
+      <script src="{% static 'index/js/owl.carousel.js' %}"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+   </body>
+</html>
